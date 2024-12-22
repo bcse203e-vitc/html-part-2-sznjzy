@@ -3,59 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
+    <title>News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+        nav ul li a {
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1em;
+        }
+        article, aside {
+            margin: 1em;
+        }
+        article {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <!-- Blog Header -->
-    <header style="background-color: #f4f4f4; padding: 1em; text-align: center;">
-        <h1>Welcome to My Blog</h1>
+    <!-- Header -->
+    <header>
+        <h1>Daily News</h1>
         <nav>
-            <ul style="display: flex; justify-content: center; list-style: none; padding: 0;">
-                <li style="margin: 0 15px;"><a href="#home" style="text-decoration: none; color: #333;">Home</a></li>
-                <li style="margin: 0 15px;"><a href="#about" style="text-decoration: none; color: #333;">About</a></li>
-                <li style="margin: 0 15px;"><a href="#contact" style="text-decoration: none; color: #333;">Contact</a></li>
+            <ul>
+                <li><a href="#world">World</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Blog Main Content -->
-    <main style="display: grid; grid-template-columns: 2fr 1fr; gap: 1em; padding: 1em;">
-        <!-- Article Section -->
+    <!-- Main Content -->
+    <main>
+        <!-- Articles -->
         <article>
-            <h2>Exploring the Beauty of Nature</h2>
-            <p><strong>Author:</strong> Sanjay | <strong>Date:</strong> December 17, 2024</p>
-            <section>
-                <h3>Introduction</h3>
-                <p>The world is full of beautiful landscapes, from majestic mountains to serene beaches.</p>
-                <p>In this post, we’ll explore some of the most stunning destinations worth visiting.</p>
-            </section>
-            <section>
-                <h3>Key Takeaways</h3>
-                <ul>
-                    <li>Travel broadens perspectives and enriches the soul.</li>
-                    <li>Nature offers a calming escape from daily life.</li>
-                    <li>Preserving the environment is crucial for future generations.</li>
-                </ul>
-            </section>
+            <h2>Breaking News: Global Summit 2024</h2>
+            <img src="summit.jpg" alt="Global Summit">
+            <p>Leaders from around the world gather to discuss critical issues affecting the planet.</p>
+            <ol>
+                <li>Climate change agreements</li>
+                <li>Global economic recovery</li>
+                <li>Advancements in technology</li>
+            </ol>
         </article>
 
-        <!-- Related Content Aside -->
-        <aside style="background-color: #f9f9f9; padding: 1em; border: 1px solid #ddd;">
-            <h3>Related Posts</h3>
+        <article>
+            <h2>Tech Trends 2024</h2>
+            <img src="tech.jpg" alt="Technology Trends">
+            <p>Discover the top tech innovations expected to shape the year ahead.</p>
+            <ol>
+                <li>AI-driven solutions</li>
+                <li>Advances in quantum computing</li>
+                <li>Breakthroughs in sustainable energy</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Sports Roundup: Top Games This Week</h2>
+            <img src="sports.jpg" alt="Sports Highlights">
+            <p>A recap of the most thrilling moments in sports from this week.</p>
+            <ol>
+                <li>Champions League finals</li>
+                <li>Grand Slam tennis tournament</li>
+                <li>NBA playoffs</li>
+            </ol>
+        </article>
+
+        <!-- Aside Section -->
+        <aside>
+            <h2>Top Stories</h2>
             <ul>
-                <li><a href="#post1" style="text-decoration: none; color: #333;">Top 10 Hiking Trails in the World</a></li>
-                <li><a href="#post2" style="text-decoration: none; color: #333;">Best Beaches to Visit in 2024</a></li>
-                <li><a href="#post3" style="text-decoration: none; color: #333;">How to Pack for a Nature Adventure</a></li>
+                <li><a href="#story1">Economic Impact of AI</a></li>
+                <li><a href="#story2">Space Exploration Milestones</a></li>
+                <li><a href="#story3">Health Innovations for 2024</a></li>
             </ul>
         </aside>
     </main>
 
-    <!-- Blog Footer -->
-    <footer style="background-color: #f4f4f4; text-align: center; padding: 1em;">
-        <p>&copy; 2024 My Blog | Follow us on
-            <a href="https://twitter.com" style="text-decoration: none; color: rgb(34, 6, 215);">Twitter</a>,
-            <a href="https://facebook.com" style="text-decoration: none; color: rgb(34, 6, 215);">Facebook</a>
-        </p>
+    <!-- Footer -->
+    <footer>
+        <p>Subscribe to our newsletter for the latest updates.</p>
+        <p>Follow us on <a href="https://twitter.com">Twitter</a>, <a href="https://facebook.com">Facebook</a>, and <a href="https://instagram.com">Instagram</a>.</p>
     </footer>
 </body>
 </html>
